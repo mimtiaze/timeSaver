@@ -43,7 +43,7 @@ int main(){
     bill += 120;
     cout << "VAT (5.00%%): " << bill*0.05 << endl;
     bill+=bill*0.05;
-    cout << "Total bill: " << bill << endl;
+    cout << "Total bill: " << bill << endl << endl;
 
     return 0;
 }
