@@ -22,9 +22,9 @@ int main(){
     cin >> unit;
 
     double bill = 0;
-    double seg[] = {75, 125, 100, 100};
-    double segPrice[] = {4.19, 5.72, 6.00, 6.34};
-    int segCount = 4;
+    double seg[] = {75, 125, 100, 100, 200};
+    double segPrice[] = {5.26, 7.20, 7.59, 8.02, 12.67};
+    int segCount = 5;
 
     cout << endl;
     cout << "Segment  |  Unit Price  |  Unit Count  |  Bill  |  Remaining Unit" << endl;
@@ -39,8 +39,9 @@ int main(){
 
     cout << endl << endl;
     cout << "Total unit Bill: " << bill << endl;
-    cout << "Demand charge: " << 120 << endl;
-    bill += 120;
+    int demandCharge = 140;
+    cout << "Demand charge: " << demandCharge << endl;
+    bill += demandCharge;
     cout << "VAT (5.00%%): " << bill*0.05 << endl;
     bill+=bill*0.05;
     cout << "Total bill: " << bill << endl << endl;
